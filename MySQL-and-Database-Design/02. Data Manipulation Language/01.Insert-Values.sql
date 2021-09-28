@@ -1,10 +1,12 @@
--- 1. Inserting Values --
+-- 1. Insert Values --
 USE coffee_store;
 
 SELECT * FROM products;
 
 INSERT INTO products (name, price, coffee_origin)
 VALUES ('Espresso', 2.50, 'Brazil' );
+
+-- Insert several values
 
 INSERT INTO products (name, price, coffee_origin)
 VALUES ('Macchiato', 3.00, 'Brazil' ), ('Cappuccino', 3.50, 'Costa Rica');
