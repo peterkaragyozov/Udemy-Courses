@@ -1,7 +1,10 @@
 -- 2. LEFT JOIN --
 
---The update clause breaks the relation for the first entry to show the significance of
---which table is going to be Table 1 and which - Table 2, when using LEFT/RIGHT Join
+/*
+The UPDATE clause breaks the relation for the first entry to show the significance when using LEFT/RIGHT JOIN regarding 
+which table is going to be chosen as Table 1 and which - as Table 2
+*/
+
 UPDATE orders
 SET customer_id = NULL
 WHERE id = 1;
