@@ -85,11 +85,14 @@ public class Main {
     }
 
     public static void processArrayList() {
+        // a way to create a new list with a copy of the elements from the initial list
         ArrayList<String> newArray = new ArrayList<String>();
         newArray.addAll(groceryList.getGroceryList());
 
+        // another way to copy the elements in a new list
         ArrayList<String> nextArray = new ArrayList<String>(groceryList.getGroceryList());
 
+        // converting the list to an ordinary array
         String[] myArray = new String[groceryList.getGroceryList().size()];
         myArray = groceryList.getGroceryList().toArray(myArray);
 
