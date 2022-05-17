@@ -14,7 +14,7 @@ USE coffee_store;
 CREATE TABLE products(
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	name VARCHAR(30),
-	price DECIMAL(3,2)
+	price DECIMAL(3,2) -- 3 is the total number of allowed digits, 2 is the number of digits after the decimal comma
 );
 
 CREATE TABLE customers(
